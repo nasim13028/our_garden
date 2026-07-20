@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Garden</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sunset Sky & Horizon Layers -->
+  <div class="sky-background"></div>
+  <div class="sun-glow"></div>
+  <div class="horizon-mountains"></div>
+  <div class="horizon-trees"></div>
+
+  <!-- Particle Canvases (60 FPS Performance) -->
+  <canvas id="firefly-canvas"></canvas>
+  <canvas id="petal-canvas"></canvas>
+
+  <!-- Main Ambient Garden Container -->
+  <main class="garden-container" id="garden-container">
+    
+    <!-- Top Header Section -->
+    <header class="header-section">
+      <h1 class="main-title">🌸 Our Garden 🌸</h1>
+      <p class="subtitle">🌹 Click on the Red Roses 🌹</p>
+      <p class="tagline">"Every rose hides a memory."</p>
+      
+      <!-- Progress Indicator (Updated to 6) -->
+      <div class="progress-tracker">
+        <span id="roses-found-count">0</span> / 6 Memories Discovered
+      </div>
+    </header>
+
+    <!-- Interactive & Decorative Plants Layer -->
+    <div class="plants-layer" id="plants-layer">
+      <!-- Generated programmatically via script.js -->
+    </div>
+
+    <!-- Animated Butterflies -->
+    <div class="butterfly-container" id="butterfly-container"></div>
+  </main>
+
+  <!-- Glassmorphism Modal for Rose Memories -->
+  <div class="modal-overlay" id="memory-modal" aria-hidden="true">
+    <div class="glass-card modal-card">
+      <button class="close-btn" id="modal-close-btn" aria-label="Close memory">&times;</button>
+      <div class="modal-image-wrapper">
+        <img id="modal-image" src="" alt="Memory Image" />
+        <div class="image-glow"></div>
+      </div>
+      <p class="modal-text" id="modal-text"></p>
+    </div>
+  </div>
+
+  <!-- Final Centered Modal (Triggered on 6/6 Roses Discovered) -->
+  <div class="modal-overlay" id="final-modal" aria-hidden="true">
+    <div class="glass-card final-card">
+      <div class="final-content">
+        <div class="bloom-icon">🌸</div>
+        <h2>Thank you for walking through<br />Our Garden.</h2>
+        <p class="final-quote">
+          "Every flower blooms for a season,<br />
+          but some memories bloom forever."
+        </p>
+        <div class="glowing-heart" title="Forever & Always">❤️</div>
+        <button class="close-btn-final" id="final-close-btn">Keep Exploring</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
