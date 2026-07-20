@@ -379,3 +379,8 @@ document.addEventListener('DOMContentLoaded', () => {
   animatePetals();
   animateFireflies();
 });
+// Preload all memory images in the background for instant display
+  ROSE_MEMORIES.forEach((memory) => {
+    const img = new Image();
+    img.src = memory.image;
+  });
