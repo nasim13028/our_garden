@@ -12,44 +12,44 @@ document.addEventListener('DOMContentLoaded', () => {
   const ROSE_MEMORIES = [
     {
       id: 1,
-      image: 'images/rose1.jpeg',
+      image: 'rose1.jpeg',
       text: "I'll always remember this day.\nYou looked so beautiful.",
-      x: 8,  // Left side
+      x: 8,
       y: 75
     },
     {
       id: 2,
-      image: 'images/rose2.jpeg',
+      image: 'rose2.jpeg',
       text: "If I could relive one moment,\nI'd choose to stay beside you.",
       x: 25,
       y: 83
     },
     {
       id: 3,
-      image: 'images/rose3.jpeg',
+      image: 'rose3.jpeg',
       text: "You were the home\nI never knew\nI was looking for.",
       x: 42,
       y: 68
     },
     {
       id: 4,
-      image: 'images/rose4.jpeg',
+      image: 'rose4.jpeg',
       text: "I'm sorry\nI wasn't there\nwhen you needed me the most.",
       x: 58,
       y: 84
     },
     {
       id: 5,
-      image: 'images/rose5.jpeg',
+      image: 'rose5.jpeg',
       text: "Every picture reminds me\nof a moment\nI'll never stop cherishing.",
       x: 75,
       y: 70
     },
     {
       id: 6,
-      image: 'images/rose6.jpeg',
+      image: 'rose6.jpeg',
       text: "Please come back.",
-      x: 88, // Right side
+      x: 88,
       y: 81
     }
   ];
